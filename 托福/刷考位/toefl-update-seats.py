@@ -23,7 +23,7 @@ def send_sms():
     token = '8180220f6a55755e0a0f5e3fec0d98e0'
     sid = 'ACb241bbb83fa61c39973969c0e30f847e'
     client = Client(sid,token)
-    msg = client.messages.create(to='+8615056932298',from_='+12172804097',body='发现新的考位，请速查邮件！')
+    msg = client.messages.create(to='<Your TEL>',from_='<Twillo TEL>',body='发现新的考位，请速查邮件！')
 
 def send_mail(title, content):
     from email.mime.text import MIMEText
